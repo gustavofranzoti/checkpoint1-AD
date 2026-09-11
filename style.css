@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* Caixa da calculadora */
+.container {
+  width: 320px;
+  margin: 30px auto;
+  padding: 24px;
+  background-color: rgb(250, 248, 248);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  margin-top: 0;
+}
+
+.subtitulo {
+  color: #777;
+  font-size: 14px;
+}
+
+input {
+  margin: 8px 0 16px 0;
+  padding: 8px;
+  font-size: 16px;
+  width: 220px;
+  border: 1px solid #7f4545;
+  border-radius: 4px;
+}
+
+button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+.resultado {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+/* Grade das faixas de IMC */
+.titulo-faixas {
+  margin-top: 40px;
+}
+
+.grade-faixas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.faixa {
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+}
+
+.faixa h3 {
+  margin-top: 0;
+}
+
+.abaixo {
+  background-color: #64b5f6;
+}
+
+.normal {
+  background-color: #66bb6a;
+}
+
+.sobrepeso {
+  background-color: #ffa726;
+}
+
+.obesidade {
+  background-color: #ef5350;
+}
+
+.rodape {
+  font-size: 12px;
+  color: #999;
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .grade-faixas {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+}
